@@ -3,8 +3,7 @@ const homeRoutes = require('./home-routes');
 
 const apiRoutes = require('./api');
 
-//router.use('/',homeRoutes); <-- not yet
-
+router.use('/',homeRoutes);
 router.use('/api', apiRoutes);
 
 //Response if none of those exist
