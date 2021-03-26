@@ -1,4 +1,4 @@
-function signupFormHandler(event) {
+function sign_inFormHandler(event) {
   event.preventDefault();
 
   const username = document.querySelector("#username").value.trim();
@@ -23,4 +23,4 @@ function signupFormHandler(event) {
 }
 document
   .querySelector(".sign-in")
-  .addEventListener("submit", signupFormHandler);
+  .addEventListener("submit", sign_inFormHandler);
