@@ -1,5 +1,4 @@
 /* Nav bar */
-
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -23,7 +22,7 @@
 .main_title{
   background-color:  black; 
   color:white;
-  padding: 2%;
+  padding: 3%;
 }
 
 .main_title label{
@@ -35,4 +34,21 @@
 
 .main_title label:hover{
   color:black;
+}
+
+/*Landing page body center*/
+.body_center{
+  width: 50%; 
+  border: 1px black; 
+  margin: auto; 
+  padding-top: 5%;
+}
+
+/*Content*/
+.post_title{
+
+}
+
+.post_content{
+  
 }
