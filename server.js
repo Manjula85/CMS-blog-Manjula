@@ -3,8 +3,25 @@ const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const path = require('path');
 
+//session and cookies
+const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const sess = {
+    secret: 'Super secret',
+    cookie: {},
+    resave: false,
+    saveUnintialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
+
 const app = express();
 const PORT = process.env.PORT||3001;
+
+//cookie creation
+app.use(session(sess));
 
 //adding handlebars
 const exphbs = require('express-handlebars');
