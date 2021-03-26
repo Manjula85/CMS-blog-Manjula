@@ -1,15 +1,18 @@
-<form class="sign-up">
+<form class="sign-up form-dim">
+    <section class="body_center_login">
+    <table>
+        <tr>
+        <td><label for="username">User name: </label></td>
+        <td><input type="text" id="username" /></td>
+        </tr><tr>
+        <td><label for="password-login">Password: </label></td>
+        <td><input type="password" id="password-login" /></td>
+        </tr>
+    </table>
     <div>
-        <label for="username">User name : </label>
-        <input type="text" id="username" />
+        <button type="submit" class="base_bg_color">Sign-up</button>
     </div>
-    <div>
-        <label for="password-login">Password: </label>
-        <input type="password" id="password-login" />
-    </div>
-    <div>
-        <button type="submit">Sign-up</button>
-    </div>
-    <span><a href="/sign-in"> Sign up instead</a></span>
+    <span><a href="/sign-in"> Login instead</a></span>
+    </section>
 </form>
 <script src="/javascript/sign-up.js"></script>
