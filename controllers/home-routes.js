@@ -16,7 +16,6 @@ router.get("/sign-up", (req, res) => {
   res.render("sign-up");
 });
 
-
 //get all posts
 router.get("/", (req, res) => {
   console.log(req.session);
@@ -41,7 +40,11 @@ router.get("/", (req, res) => {
     .then((dbPostData) => {
       //to get the data
       const posts = dbPostData.map((post) => post.get({ plain: true }));
-      res.render("homepage", { posts });
+
+      res.render("homepage", {
+        posts,
+        loggedIn: req.session.loggedIn,
+      });
     })
     .catch((err) => {
       console.log(err);

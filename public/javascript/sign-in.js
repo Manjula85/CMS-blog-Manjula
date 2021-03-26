@@ -15,7 +15,8 @@ function sign_inFormHandler(event) {
     });
     //Check the reponse status
     if (response.ok) {
-      console.log('success');
+      console.log("success");
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }

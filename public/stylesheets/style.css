@@ -4,7 +4,8 @@
   background-color: #333;
 }
 
-.topnav a, span{
+.topnav a,
+span {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -13,75 +14,86 @@
   font-size: 17px;
 }
 
-.topnav a:hover, span:hover{
-  background-color: #4CAF50;
+.topnav a:hover,
+span:hover {
+  background-color: #4caf50;
   color: black;
 }
 
 /*landing page title*/
-.main_title{
-  background-color:  black; 
-  color:white;
+.main_title {
+  background-color: black;
+  color: white;
   padding: 3%;
 }
 
-.main_title label{
-  border: 15px solid  #4CAF50;
-  background-color: #4CAF50;
-  margin: 2%;
+.main_title label {
+  border: 15px solid #4caf50;
+  background-color: #4caf50;
+  margin: 1%;
   border-radius: 12px;
 }
 
-.main_title label:hover{
-  color:black;
+.main_title label:hover {
+  color: black;
 }
 
 /*Landing page body center*/
-.body_center{
-  width: 50%; 
-  border: 1px black; 
-  margin: auto; 
+.body_center {
+  width: 50%;
+  border: 1px black;
+  margin: auto;
   padding-top: 5%;
 }
 
 /*Content*/
-.post_title{
+.post_title {
   color: white;
   background-color: black;
 }
 
-.post_container{
-  background-color: #4CAF50;
+.post_container {
+  background-color: #4caf50;
   color: black;
   border: 2px black solid;
   padding: 3%;
 }
 
 /* Sign up and sign in form*/
-.form-dim{
-  background-color: #4CAF50;
+.form-dim {
+  background-color: #4caf50;
   border: 3px solid black;
+  /*adding flex*/
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.body_center_login{
-  width: 50%; 
-  border: 1px black; 
-  margin: auto; 
+.body_center_login {
+  width: 50%;
+  border: 1px black;
+  margin: auto;
   padding: 3% 0 5% 0;
 }
 
-.body_center_login  tr label{
+.body_center_login tr label {
   margin: 2%;
   width: auto;
 }
 
-td{
+td {
   padding: 3%;
-  margin: auto;  
+  margin: auto;
 }
 
-.base_bg_color{
-  background-color: black; 
-  color: white; 
-  padding:1%;
+.base_bg_color {
+  background-color: black;
+  color: white;
+  padding: 1%;
+}
+
+input {
+  border-radius: 12px;
+  width: 200%;
+  height: 150%;
+  text-align: center;
 }

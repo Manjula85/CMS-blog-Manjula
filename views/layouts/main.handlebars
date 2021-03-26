@@ -14,8 +14,11 @@
             <div class="topnav">
                 <a href='/'>Home</a>
                 <a href='#'>Dashboard</a>
-                <a href='sign-in'>Login</a>
+                {{#if loggedIn}}
                 <span onclick='logout()'>Logout</span>
+                {{else}}
+                <a href='sign-in'>Login</a>
+                {{/if}}
             </div>
             <div class="main_title">
                 <label>THE TECH BLOG</label>

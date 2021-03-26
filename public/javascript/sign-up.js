@@ -17,7 +17,7 @@ function signupFormHandler(event) {
         }),
         headers: { "Content-Type": "application/json" },
       });
-      // console.log('********** signUp :'+ json.str(response));
+
       //Check the reponse status
       if (response.ok) {
         console.log('success');
@@ -27,6 +27,7 @@ function signupFormHandler(event) {
       }
     }
   }
+
   document
     .querySelector(".sign-up")
     .addEventListener("submit", signupFormHandler);
