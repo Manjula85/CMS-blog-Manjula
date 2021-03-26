@@ -4,7 +4,7 @@
   background-color: #333;
 }
 
-.topnav a {
+.topnav a, span{
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -13,7 +13,7 @@
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav a:hover, span:hover{
   background-color: #4CAF50;
   color: black;
 }
