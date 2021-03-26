@@ -46,9 +46,14 @@
 
 /*Content*/
 .post_title{
+  color: white;
+  background-color: black;
 
 }
 
-.post_content{
-  
+.post_container{
+  background-color: #4CAF50;
+  color: black;
+  border: 2px black solid;
+  padding: 2%;
 }
