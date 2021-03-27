@@ -1,15 +1,11 @@
-function sign_inFormHandler(event) {
+async function sign_inFormHandler(event) {
   event.preventDefault();
 
   const username = document.querySelector("#username").value.trim();
   const password = document.querySelector("#password-login").value.trim();
 
-  console.log('******************');
-  console.log('User Name: '+ username);
-  console.log('Password: '+ password);
-
   if (username && password) {
-    const response = fetch("/api/users/login", {
+    const response = await fetch("/api/users/login", {
       method: "post",
       body: JSON.stringify({
         username,
@@ -18,6 +14,7 @@ function sign_inFormHandler(event) {
       headers: { "Content-Type": "application/json" },
     });
     //Check the reponse status
+    console.log("***response: " + JSON.stringify(response));
     if (response.ok) {
       console.log("success");
       document.location.replace("/");
