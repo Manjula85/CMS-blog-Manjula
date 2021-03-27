@@ -4,6 +4,10 @@ function sign_inFormHandler(event) {
   const username = document.querySelector("#username").value.trim();
   const password = document.querySelector("#password-login").value.trim();
 
+  console.log('******************');
+  console.log('User Name: '+ username);
+  console.log('Password: '+ password);
+
   if (username && password) {
     const response = fetch("/api/users/login", {
       method: "post",

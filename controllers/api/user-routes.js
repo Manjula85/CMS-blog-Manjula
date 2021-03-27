@@ -68,7 +68,6 @@ router.post("/", (req, res) => {
 //Login
 router.post("/login", (req, res) => {
   User.findOne({
-    attributes: { exclude: ["password"] },
     where: {
       username: req.body.username,
     },
@@ -87,6 +86,7 @@ router.post("/login", (req, res) => {
       },
     ],
   }).then((dbUserData) => {
+    console.log('************* dbUserData: ' + JSON.stringify(dbUserData));
     if (!dbUserData) {
       res
         .status(400)
