@@ -18,7 +18,7 @@ router.get("/sign-up", (req, res) => {
 
 //get all posts
 router.get("/", (req, res) => {
-  console.log(req.session);
+  // console.log(req.session);
   Post.findAll({
     attributes: ["id", "title", "content", "created_at"],
     order: [["created_at", "DESC"]],
