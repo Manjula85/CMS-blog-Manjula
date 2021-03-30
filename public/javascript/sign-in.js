@@ -17,8 +17,9 @@ async function sign_inFormHandler(event) {
       headers: { "Content-Type": "application/json" },
     });
     //Check the reponse status
-    console.log('******** AM I HERE?');
     console.log("***response: " + JSON.stringify(response));
+    alert(JSON.stringify(response));
+
     if (response.ok) {
       document.location.replace("/");
     } else {

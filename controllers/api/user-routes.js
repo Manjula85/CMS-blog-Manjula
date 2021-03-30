@@ -22,7 +22,7 @@ router.get("/:id", (req, res) => {
     include: [
       {
         model: Post,
-        attributes: ["id", "title", "post_url", "created_at"],
+        attributes: ["id", "title", "created_at"],
       },
       {
         model: Comment,
@@ -67,7 +67,6 @@ router.post("/", (req, res) => {
 
 //Login
 router.post("/login", (req, res) => {
-  console.log()  //<-/////
   User.findOne({
     where: {
       username: req.body.username,
