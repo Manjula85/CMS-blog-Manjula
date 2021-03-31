@@ -13,9 +13,9 @@
         <header>
             <div class="topnav">
                 <a href='/'>Home</a>
-                <a href='#'>Dashboard</a>
                 {{#if loggedIn}}
                 <span onclick='logout()'>Logout</span>
+                <a href='/dashboard'>Dashboard</a>
                 {{else}}
                 <a href='/sign-in'>Login</a>
                 {{/if}}
@@ -27,6 +27,7 @@
         <main>
             {{{body}}}
         </main>
+        <br>
         <footer class="base_bg_color">
             Thanks for visiting!
         </footer>

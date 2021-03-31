@@ -21,7 +21,7 @@ async function sign_inFormHandler(event) {
     alert(JSON.stringify(response));
 
     if (response.ok) {
-      document.location.replace("/");
+      document.location.replace("/");  //Or do we want to go straight to dashboard instead?
     } else {
       alert(response.statusText);
     }
