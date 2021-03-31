@@ -86,7 +86,7 @@ router.post("/login", (req, res) => {
       },
     ],
   }).then((dbUserData) => {
-    console.log('************* dbUserData: ' + JSON.stringify(dbUserData));
+    console.log('************* LOGGED IN dbUserData: ' + JSON.stringify(dbUserData));
     if (!dbUserData) {
       res
         .status(400)
