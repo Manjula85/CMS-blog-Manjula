@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const {Post, User, Comment} = require('../models');
+const withAuth = require('../utils/auth');    // <--- Not used still (add it to proper, POST, PUT and DELETE Methods)
 
 router.get('/', (req,res) => {
     Post.findAll({
