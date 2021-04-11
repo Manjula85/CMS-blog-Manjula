@@ -16,7 +16,7 @@ router.get('/', (req,res) => {
         ],
         include: [
             {
-                model: Commnet,
+                model: Comment,
                 attributes: [ 'id', 'comment_text', 'user_id', 'post_id', 'created_at'],
                 include: {
                     model: User,
