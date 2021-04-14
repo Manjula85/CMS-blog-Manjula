@@ -15,10 +15,10 @@ async function sign_inFormHandler(event) {
         password,
       }),
       headers: { "Content-Type": "application/json" },
-    });
+    })
     //Check the reponse status
-    console.log("***response: " + JSON.stringify(response));
-    alert(JSON.stringify(response));
+    // console.log("***response: " + JSON.stringify(response));
+    // alert(JSON.stringify(response));
 
     if (response.ok) {
       document.location.replace("/");  //Or do we want to go straight to dashboard instead?

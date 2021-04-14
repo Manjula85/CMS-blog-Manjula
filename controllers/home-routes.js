@@ -41,6 +41,8 @@ router.get("/", (req, res) => {
       //to get the data
       const posts = dbPostData.map((post) => post.get({ plain: true }));
 
+      console.log("REQ" + JSON.stringify(req.session));
+
       res.render("homepage", {
         posts,
         loggedIn: req.session.loggedIn,
