@@ -97,3 +97,22 @@ input {
   height: 150%;
   text-align: center;
 }
+
+/* Dashbutton*/
+.addNewPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashTdRight{
+  background-color: yellow;
+  padding: 1%;
+  width: 100%;
+}
+
+.dashTdLeft{
+  background-color: yellow;
+  padding: 1%;
+  width: 100%;
+}

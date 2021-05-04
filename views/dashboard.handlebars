@@ -1,8 +1,21 @@
-<section>
+<section style="background-color: #4CAF50;">
+    <br>
+
+    <table>
+        {{# each posts as |post|}}
+        <tr data-id={{id}} style="border: 0" onClick=alert("clicked on id:")>
+            <td class="dashTdRight" onClick=alert("clicked on id:")> {{title}}</td>
+            <td class="dashTdLeft" onClick=alert("clicked on id:")>
+                {{format_date created_at}}</td>
+        </tr>
+        {{/each}}
+    </table>
+
+    {{!-- All for the New button --}}
     <div style="height: 50%;"></div>
-    <div class="bottom-button">
-    <button type="submit" onclick="alert('Move to /dashboard/edit-del page for that post');"> 
-    + New Post +
-    </button>
+    <div class="addNewPost">
+        <button type="submit" onclick="alert('Move to /dashboard/edit-del page for that post');">
+            + New Post +
+        </button>
     </div>
 </section>
