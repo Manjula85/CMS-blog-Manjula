@@ -1,15 +1,13 @@
 <section style="background-color: #4CAF50;">
     <br>
 
-    <table>
-        {{# each posts as |post|}}
-        <tr data-id={{id}} style="border: 0" onClick=alert("clicked on id:")>
-            <td class="dashTdRight" onClick=alert("clicked on id:")> {{title}}</td>
-            <td class="dashTdLeft" onClick=alert("clicked on id:")>
-                {{format_date created_at}}</td>
-        </tr>
-        {{/each}}
-    </table>
+    {{# each posts as |post|}}
+    <div onclick= "idTag({{id}})" class="dashLabel">
+        <label style="margin-right: 40%;"> {{title}}</label>
+        <label style="margin-left: 80%;"> {{format_date created_at}}</label>
+    </div>
+    <br>
+    {{/each}}
 
     {{!-- All for the New button --}}
     <div style="height: 50%;"></div>
@@ -19,3 +17,9 @@
         </button>
     </div>
 </section>
+<script>
+    var idTag = function(id){
+        console.log("it's id is "+ id);
+        document.location.replace('/');
+    }
+</script>
