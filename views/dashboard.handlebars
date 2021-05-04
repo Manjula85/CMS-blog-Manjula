@@ -10,9 +10,8 @@
     {{/each}}
 
     {{!-- All for the New button --}}
-    <div style="height: 50%;"></div>
     <div class="addNewPost">
-        <button type="submit" onclick="alert('Move to /dashboard/edit-del page for that post');">
+        <button type="submit" onclick="alert('Move to /dashboard/dash-edit-del page for that post');">
             + New Post +
         </button>
     </div>
@@ -20,6 +19,6 @@
 <script>
     var idTag = function(id){
         console.log("it's id is "+ id);
-        document.location.replace('/');
+        document.location.replace('/dashboard/'+id);
     }
 </script>
