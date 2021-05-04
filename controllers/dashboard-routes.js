@@ -20,6 +20,7 @@ router.get("/", (req, res) => {
 
 //get by id number
 router.get("/:id", (req, res) => {
+  console.log("************ did it get here???");
   Post.findOne({
     where: {
       id: req.params.id,
@@ -47,9 +48,9 @@ router.get("/:id", (req, res) => {
       }
 
       // serialize data before passing to template
-      const posts = dbPostData.map((post) => post.get({ plain: true }));
-      res.render("dash-edit-del", { posts, loggedIn: true });
-      console.log("************ did it get here???");
+      const post = dbPostData.get({ plain: true });
+      res.render("dash-update-del", { post, loggedIn: true });
+      
     })
     .catch((err) => {
       res.status(500).json(err);
