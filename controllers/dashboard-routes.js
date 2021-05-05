@@ -18,6 +18,12 @@ router.get("/", (req, res) => {
     });
 });
 
+//dash-new Post
+router.get("/dash-new", (req, res) => {
+  console.log("************ did it get here???");
+  res.render("dash-new");
+});
+
 //get by id number
 router.get("/:id", (req, res) => {
   Post.findOne({
@@ -56,10 +62,6 @@ router.get("/:id", (req, res) => {
     });
 });
 
-//dash-new Post
-router.get("/dash-new", (req, res) => {
-  console.log("************ did it get here???");
-  res.render("dash-new");
-});
+
 
 module.exports = router;
