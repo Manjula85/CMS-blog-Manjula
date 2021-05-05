@@ -1,0 +1,20 @@
+<section style="background-color: #4CAF50;">
+
+    <div style="border: 3px solid black;">
+        <section style="margin: 2% 1% 1% 2%;">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" style="width: 100%;"><br><br>
+        
+            <label for="content">Content:</label>
+            <input type="textarea" id="content" name="content" rows="4" cols="50" style="width: 100%;"><br><br>
+        </section>
+    </div>
+
+    {{!-- All for the New button --}}
+    <div class="addNewPost">
+        <button type="button" onclick="updatePost()">Create</button>
+    </div>
+</section>
+
+<script src="/javascript/add-post.js"></script>
+

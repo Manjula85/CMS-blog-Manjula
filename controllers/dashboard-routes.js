@@ -20,7 +20,6 @@ router.get("/", (req, res) => {
 
 //get by id number
 router.get("/:id", (req, res) => {
-  console.log("************ did it get here???");
   Post.findOne({
     where: {
       id: req.params.id,
@@ -55,6 +54,12 @@ router.get("/:id", (req, res) => {
     .catch((err) => {
       res.status(500).json(err);
     });
+});
+
+//dash-new Post
+router.get("/dash-new", (req, res) => {
+  console.log("************ did it get here???");
+  res.render("dash-new");
 });
 
 module.exports = router;
