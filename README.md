@@ -28,23 +28,23 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 
 ### Sign-up
 
-![](/images/sing-up.PNG)
+![](/images/sing-up.png)
 
 ### Homepage
 
-![](/images/homepage.PNG)
+![](/images/homepage.png)
 
 ### Dashboard
 
-![](/images/dashboard.PNG)
+![](/images/dashboard.png)
 
 ### New Post
 
-![](/images/new-post.PNG)
+![](/images/new-post.png)
 
 ### Edit-Delete
 
-![](/images/edit-delete.PNG)
+![](/images/edit-delete.png)
 
 
 ## Relevant links
