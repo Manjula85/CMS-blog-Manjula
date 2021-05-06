@@ -6,25 +6,48 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 ## Built with
 * JavaScript
 * Node
+* CSS
+* Handlebars
+* HTML
 
 ## npm 
-* Express
-* Moment
-* mongoose
-* routes
+* bcrypt
+* connect-session-sequelize
+* dotenv
+* express
+* express-handlebars
+* express-session
+* jest
+* mysql2
+* sequelize
+* nodemon
 
-## API routes
+### Login
 
 ![](/images/allRoutes.PNG)
 
+### Sign-up
 
-### Result
+![](/images/result.PNG)
+
+### Homepage
+
+![](/images/allRoutes.PNG)
+
+### Dashboard
+
+![](/images/result.PNG)
+
+### New Post
+
+![](/images/allRoutes.PNG)
+
+### Edit-Delete
 
 ![](/images/result.PNG)
 
 
-
 ## Relevant links
-Walkthrough video link: https://drive.google.com/file/d/1h09F2e_0vs6ZB6xEdbM07CwepJrYMPkf/view
+URL: https://drive.google.com/file/d/1h09F2e_0vs6ZB6xEdbM07CwepJrYMPkf/view
 
 Git hub link: https://github.com/Manjula85/social-media-Manjula
