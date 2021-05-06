@@ -1,9 +1,7 @@
 # CMS-blog-Manjula
 
-# social-media-Manjula
-
 ## Purpose
-To give users access to a social network where they can share thier thoughts, react to friends' thoughts and create a friends list.
+To build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
 ## Built with
 * JavaScript
