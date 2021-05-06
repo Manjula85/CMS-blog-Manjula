@@ -24,7 +24,7 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 
 ### Login
 
-![](/images/login.PNG)
+![](/images/login.png)
 
 ### Sign-up
 
