@@ -20,8 +20,9 @@ router.get("/", (req, res) => {
 
 //dash-new Post
 router.get("/dash-new", (req, res) => {
-  console.log("************ did it get here???");
-  res.render("dash-new");
+  res.render("dash-new",{
+    user_id: req.session.user_id
+  });
 });
 
 //get by id number

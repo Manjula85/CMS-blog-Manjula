@@ -12,9 +12,13 @@
 
     {{!-- All for the New button --}}
     <div class="addNewPost">
-        <button type="button" onclick="updatePost()">Create</button>
+        <button type="button" onclick="updatePost({{user_id}})">Create</button>
     </div>
 </section>
 
 <script src="/javascript/add-post.js"></script>
+<script>
+    console.log(`is it there? {{user_id}}`);
+</script>
+
 

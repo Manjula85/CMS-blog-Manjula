@@ -1,18 +1,16 @@
-async function newFormHandler(event) {
-    event.preventDefault();
-  
-    const title = document.querySelector('input[name="post-title"]').value.trim();
-    const content = document.querySelector('input[name="content"]').value.trim();
-    const type = document.querySelector('#type').value.trim();
-    const skills = document.querySelector('input[name="skills"]').value.trim();
+
+async function updatePost(id) {
+
+    const user_id = id;  
+    const title = document.querySelector('input[name="title"]').value.trim();
+    const content = document.querySelector('textarea[name="content"]').value.trim();
 
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({
         title,
         content,
-        type,
-        skills
+        user_id
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -25,5 +23,3 @@ async function newFormHandler(event) {
       alert(response.statusText);
     }
   }
-  
-  document.querySelector('.post-form').addEventListener('submit', newFormHandler);

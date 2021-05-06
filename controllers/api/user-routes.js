@@ -55,6 +55,7 @@ router.post("/", (req, res) => {
         //declaring session variables
         (req.session.username = dbUserData.username),
           (req.session.password = dbUserData.password),
+          (req.session.user_id = dbUserData.user_id),
           (req.session.loggedIn = true);
 
         res.json(dbUserData);
@@ -91,12 +92,11 @@ router.post("/login", (req, res) => {
       //declaring session variables
       (req.session.username = dbUserData.username),
         (req.session.password = dbUserData.password),
+        (req.session.user_id = dbUserData.user_id),
         (req.session.loggedIn = true);
 
       res.json(dbUserData);
-    });
-
-    //res.json({ user: dbUserData, message: "You are now logged in!" });
+    });  
   });
 });
 
