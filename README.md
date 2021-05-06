@@ -23,7 +23,6 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 * nodemon
 
 ### Login
-
 ![](/images/login.png)
 
 ### Sign-up
@@ -48,6 +47,6 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 
 
 ## Relevant links
-URL: https://drive.google.com/file/d/1h09F2e_0vs6ZB6xEdbM07CwepJrYMPkf/view
+URL: https://manjula85.github.io/CMS-blog-Manjula/
 
 Git hub link: https://github.com/Manjula85/social-media-Manjula
