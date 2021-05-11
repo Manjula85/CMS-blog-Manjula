@@ -49,4 +49,6 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 ## Relevant links
 URL: https://manjula85.github.io/CMS-blog-Manjula/
 
+Heroku path: https://cms-blog-manjula.herokuapp.com/
+
 Git hub link: https://github.com/Manjula85/CMS-blog-Manjula
